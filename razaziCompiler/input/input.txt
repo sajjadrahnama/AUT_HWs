@@ -1,0 +1,62 @@
+program allTest
+	char ca:='a',carr[3]:={'a','b','c'},carr2[0..2]:={'x','y'};
+	real r1:=3.14,r2;
+    int nums[-12..14],nums2[num1..num2];
+    bool ba:=true,bb:=false;
+
+	proc sum (int a,b;){
+		int s;
+		{
+			s:= a + b;
+			return s;
+		}
+	};
+	proc max (int a,b;){
+		int max;
+		{
+			if a > b and a = b then
+				return a
+			else
+				return b;
+		}
+	};
+	proc max (int iarr[10];){
+		int i:=0, max:=0;
+		{
+			do{
+				if max > i then
+					max:= i;
+			} while i < 10;
+			return max;
+		}
+	};
+	proc pow (int a,b;){
+		int result:=1;
+		{
+			for i in 0..12 repeat
+				result:= (result) * a;
+			return result;
+		}
+	};
+	proc minMax (int a,b,max;){
+		{
+			if max >= 1 then
+				return a+b
+			else
+				return a-b;
+		}
+	};
+	proc charGenerator (int a;){
+		{
+			switch a
+				case 1: {return 'a';};
+				case 2: {return 'b';};
+				default: {return 'G';};
+			end;
+		}
+	};
+	main{
+		minMax(r1,r2,r1);
+		charGenerator(r3);
+	}
+	
