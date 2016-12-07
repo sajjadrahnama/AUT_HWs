@@ -1,0 +1,102 @@
+.footer{
+  width: 100%;
+  min-width: 1350px;
+  background-color: $black1;
+  position: relative;
+  margin-top: 100px;
+  .top_c{
+    padding-top: 20px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    .col{
+      box-sizing: border-box;
+      padding-right: 35px;
+      width: 25%;
+      float: right;
+      .header{
+        padding: 15px 0px 10px 10px;
+        color: $white1;
+        text-align: right;
+      }
+      .box{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: auto;
+        width: 100%;
+        padding: 10px;
+        .pic_w{
+          box-sizing: border-box;
+          float: right;
+          width: 30%;
+          img{
+            width: 100%;
+          }
+        }
+        .cap {
+          box-sizing: border-box;
+          width: 70%;
+          float: right;
+          padding-right: 10px;
+          text-align: right;
+          a {
+            font-size: 12px;
+            color: $gray1;
+            -webkit-transition: .3s;
+            &:hover{
+              color: $red1;
+            }
+          }
+        }
+        .date{
+          float: right;
+          margin-top: 10px;
+          padding-right: 10px;
+          color: $gray1;
+          font-size: 9px;
+        }
+      }
+      ul{
+        li{
+          list-style: none;
+          text-align: right;
+          .link{
+            color: $gray1;
+            font-size: 14px;
+            line-height: 250%;
+            width: 10px;
+          }
+        }
+      }
+    }
+  }
+  .mid_c{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom:1px solid $white1;
+  }
+  .bottom_c{
+    width: 100%;
+    background-color: black;
+    padding: 15px;
+    .bottom_c_c{
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+      .right{
+        float: right;
+        font-size: 12px;
+        color: $white1;
+      }
+      .left{
+        a{
+          padding: 5px;
+          font-size: 12px;
+          color: $white1;
+        }
+      }
+    }
+  }
+}
